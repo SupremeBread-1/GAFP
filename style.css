@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-wrap {
+    position: fixed;
+    z-index: -99;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  #bg {
+    position: relative;
+    top: -60vh;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  
+  /* video #bg {
+    position: fixed;
+    min-width: 50%;
+    min-height: 50%;
+    width: 50%;
+    height: 50%;
+    z-index: -99;
+  } */
+  /* div #block {
+    height: 50vh;
+    background-color: white;
+  } */
+  
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 768px;
+    box-sizing: border-box;
+    border: 2px solid red;
+  }
+  
+  /* header */
+  .top {
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    height: 70px;
+    width: 768px;
+    background-image: url(https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .cloud {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: steelblue 2px solid;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .cloud iframe {
+    /* display: hidden; */
+    height: 0;
+    width: 0;
+  
+  }
+  
+  .split-1 {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: chartreuse 2px solid;
+    height: 100%;
+    flex-basis: 10%;
+  }
+  .split-2 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid cyan;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .split-2 img {
+    display: none;
+  }
+  #hamburger {
+    border: 2px solid salmon;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #the-burg {
+    height: 40px;
+    width: 40px;
+    filter: drop-shadow(7px 7px 7px skyblue);
+  }
+  #name {
+    height: 60%;
+    width: 60%;
+    border: 2px solid black;
+    font-family: 'Century Gothic','Pinyon Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+    letter-spacing: -0.1em;
+    text-align: center;
+    /* background-color: white; */
+  }
+  
+  /* search */
+  
+  #search {
+    border: solid 2px  indigo;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #find {
+    min-height: 45px;
+    min-width: 400px;
+  }
+  #the-puff {
+    
+  }
+  #the-man {
+    display: none;
+  }
+  
+  /* full-scale screen */
+  @media (min-width:768px) {
+    body {
+      width: 100vw;
+      border: hidden;
+    }
+    .background-wrap {
+      visibility: visible;
+    }
+    .top  {
+      border: hidden;
+      background-image: none;
+      width: 100%;
+      height: 50%;
+    }
+    .cloud {
+      height: 100%;
+      border: hidden;
+    }
+    .split-1 {
+      border: hidden;
+    }
+    #hamburger {
+      border: hidden;
+    }
+    .split-2 {
+      flex-basis: 80%;
+      display: flex;
+      border: hidden;
+      /* vertical-align: middle; */
+    }
+    #name {
+      font-size: 0;
+      justify-content: center;
+      align-items: center;
+      border: hidden;
+      vertical-align: middle;
+    }
+    .split-2 img {
+      width: 100%;
+      /* height: 100%; */
+      display: unset;
+      /* vertical-align: middle; */
+    }
+  
+    /* search */
+  
+  
+  }
+  
