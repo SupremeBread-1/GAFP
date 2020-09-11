@@ -1,0 +1,13 @@
+#can {
+    height: 45px;
+    width: 400px;
+    border-radius: 25px;
+    text-align: center;
+    background-image: url(../pngwave\ \(24\).png);
+    font-family: 'Century Gothic','Pinyon Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+    letter-spacing: -0.1em;
+    color: aliceblue;
+}
