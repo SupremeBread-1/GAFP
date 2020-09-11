@@ -221,7 +221,7 @@ body {
   font-style: italic;
   color: aliceblue;
   text-shadow: 2px 2px 5px skyblue;
-  background: url(../GAFP/pngwave\ \(5\).png);
+  background: url('../GAFP/pngwave\ \(5\).png');
   border: 1px white solid;
 }
 #the-puff {
