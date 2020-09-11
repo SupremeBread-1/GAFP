@@ -103,7 +103,7 @@ body {
   width: 768px;
   box-sizing: border-box;
   /* border: 2px solid red; */
-  background: url('../pngwave\ \(18\).png') top no-repeat , url('https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg') bottom no-repeat ;
+  background: url('../GAFP/pngwave\ \(18\).png') top no-repeat , url('https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg') bottom no-repeat ;
   background-size: cover, 1000px;
 }
 
@@ -199,7 +199,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../flipped.png');
+  background-image: url('../GAFP/flipped.png');
   background-position: center;
   background-size: 800px;
   background-repeat: no-repeat;
@@ -221,7 +221,7 @@ body {
   font-style: italic;
   color: aliceblue;
   text-shadow: 2px 2px 5px skyblue;
-  background: url(../pngwave\ \(5\).png);
+  background: url(../GAFP/pngwave\ \(5\).png);
   border: 1px white solid;
 }
 #the-puff {
