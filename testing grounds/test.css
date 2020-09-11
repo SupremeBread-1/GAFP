@@ -1,0 +1,341 @@
+/* Hide the video on mobile
+.video-container {
+    display: none;
+  }
+  
+  At everything bigger than mobile, make .video-container fill its parent
+  @media (min-width: 768px) {
+    .video.full-width {
+      height: 450px;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  
+    .video-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      z-index: -99;
+    }
+  
+    .video-container > iframe {
+      flex: 0 0 auto;
+      max-width: none;
+    }
+  } */
+
+/* body {
+  margin: 0 auto;
+  height: 50vh;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-image: url('../page\ 2\ prototype/page2.html'); */
+}
+*:focus {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+  
+}
+
+.thunder {
+  position: relative;
+}
+
+.background-wrap {
+  position: fixed;
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+#bg {
+  position: absolute;
+  /* top: -60vh; */
+  top: -50vh;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+#reverse {
+  transform: scale(1,-1);
+  position: absolute;
+  top: 65vh;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+/* video #bg {
+  position: fixed;
+  min-width: 50%;
+  min-height: 50%;
+  width: 50%;
+  height: 50%;
+  z-index: -99;
+} */
+/* div #block {
+  height: 50vh;
+  background-color: white;
+} */
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 768px;
+  box-sizing: border-box;
+  border: 2px solid red;
+  background: url('../pngwave\ \(18\).png') top no-repeat , url('https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg') bottom no-repeat ;
+  background-size: cover, 1000px;
+}
+
+/* header */
+.top {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid blue; */
+  height: 70px;
+  /* height: 100px; */
+  width: 768px;
+  /* background-image: url(https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* position: fixed; */
+}
+
+.cloud {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  /* border: steelblue 2px solid; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cloud iframe {
+  /* display: hidden; */
+  height: 0;
+  width: 0;
+
+}
+
+.split-1 {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border: chartreuse 2px solid; */
+  height: 100%;
+  flex-basis: 10%;
+}
+.split-2 {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid cyan; */
+  flex-basis: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.split-2 img {
+  display: none;
+}
+#hamburger {
+  /* border: 2px solid salmon; */
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#the-burg {
+  height: 40px;
+  width: 40px;
+  filter: drop-shadow(7px 7px 7px skyblue);
+}
+#name {
+  height: 60%;
+  width: 60%;
+  /* border: 2px solid black; */
+  font-family: 'Century Gothic','Pinyon Script', cursive;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  letter-spacing: -0.1em;
+  text-align: center;
+  /* background-color: white; */
+}
+
+/* search */
+#clear-brick {
+  height: 700px;
+  width: 700px;
+}
+#search {
+  /* border: solid 2px  indigo; */
+  height: 464px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../flipped.png');
+  background-position: center;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-y: -265px;
+  position: relative;
+  overflow: visible;
+}
+#find {
+  position: absolute;
+  top: 25%;
+  min-height: 45px;
+  min-width: 400px;
+  border-radius: 25px;
+  text-align: center;
+  /* font-family: ; */
+  font-size: 1.5em;
+  font-family: 'Century Gothic','Pinyon Script', cursive;
+  font-weight: bold;
+  font-style: italic;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px skyblue;
+  background: url(../pngwave\ \(5\).png);
+  border: 1px white solid;
+}
+#the-puff {
+  /* height: 100px;
+  width: 100px; */
+  height: 100px;
+  width: 200px;
+}
+#the-man {
+  display: none;
+}
+
+/* page 2 stuff */
+
+.part-two {
+  width: 100vw;
+  height: 200vh;
+  border: 2px solid red;
+  background: rosybrown;
+}
+header {
+  display: flex;
+}
+#barred {
+  height: 20px;
+  width: 60px;
+}
+#but {
+  height: 20px;
+  width: 50px;
+}
+#super-container {
+  height: 350vh;
+  width: 100%;
+  border: royalblue 2px solid;
+  overflow: hidden;
+  max-width: 100%;
+}
+.container {
+  height: 350vh;
+  width: 100%;
+  border: royalblue 2px solid;
+  /* overflow: hidden; */
+  max-width: 100%;
+}
+.window {
+  height: 100%;
+  width: 75%;
+  margin-top: -130px;
+  margin-bottom: 100px;
+}
+
+
+
+
+/* full-scale screen */
+@media (min-width:768px) {
+  body {
+    width: 100vw;
+    border: hidden;
+    background-image: none;
+  }
+  .background-wrap {
+    visibility: visible;
+  }
+  /* #reverse {
+    visibility: hidden;
+  } */
+  .top  {
+    border: hidden;
+    background-image: none;
+    width: 100%;
+    height: 50%;
+  }
+  .cloud {
+    height: 100%;
+    border: hidden;
+  }
+  .split-1 {
+    border: hidden;
+  }
+  #hamburger {
+    border: hidden;
+  }
+  #the-burg {
+    filter: none;
+  }
+  .split-2 {
+    flex-basis: 80%;
+    display: flex;
+    border: hidden;
+    /* vertical-align: middle; */
+  }
+  #name {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hidden;
+    vertical-align: middle;
+  }
+  .split-2 img {
+    width: 100%;
+    /* height: 100%; */
+    display: unset;
+    /* vertical-align: middle; */
+  }
+
+  /* search */
+
+
+}
+/* @media (min-width: device-width) {
+  #reverse {
+    visibility: visible;
+  }
+} */
