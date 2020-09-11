@@ -145,7 +145,7 @@ function coinflip() {
 }
 
 const pop = document.getElementById('web')
-const goose = ['../please.png', '../no.png','../punch.png','../knife.png', '../dead.png','../loss.png','../pathetic.jpg','../lata.png']
+const goose = ['../please.png', '../no.png','../punch.png','../knife.png', '../dead.png','../tenor.gif','../loss.png','../pathetic.jpg','../lata.png']
 let imgi = 0
 const center = document.getElementById('no-look')
 center.setAttribute('src', goose[imgi])
