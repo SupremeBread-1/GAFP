@@ -155,7 +155,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg);
+  background-image: url('https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg');
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -14,7 +14,7 @@ window.onload = function () {
     let mouse = document.createElement('iframe');
     let numbaone = document.querySelector('#can').value;
     console.log(numbaone);
-    let web = "http://www.bing.com/search?q=";
+    let web = "https://www.bing.com/search?q=";
     console.log(web);
     const send = web + numbaone
     console.log(send)

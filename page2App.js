@@ -188,7 +188,7 @@ form.addEventListener('submit', (e) => {
             // let pidgeon = document.querySelector('#callme').value;
             console.log(query);
             // let pidgeon = query.value;
-            let web = "http://www.bing.com/search?q=";
+            let web = "https://www.bing.com/search?q=";
             console.log(web);
             let send = web + query
             console.log(send)
