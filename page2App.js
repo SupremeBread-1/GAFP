@@ -145,7 +145,7 @@ function coinflip() {
 }
 
 const pop = document.getElementById('web')
-const goose = ['../please.png', '../no.png','../punch.png','../knife.png', '../dead.png','../tenor.gif','../loss.png','../pathetic.jpg','../lata.png']
+const goose = ['../GAFP/please.png', '../GAFP/no.png','../GAFP/punch.png','../GAFP/knife.png', '../GAFP/dead.png','../GAFP/tenor.gif','../GAFP/loss.png','../GAFP/pathetic.jpg','../GAFP/lata.png']
 let imgi = 0
 const center = document.getElementById('no-look')
 center.setAttribute('src', goose[imgi])
@@ -228,7 +228,7 @@ form.addEventListener('submit', (e) => {
 
 function nestJS() {
     var c = document.getElementById('barred').value,
-        url = '../page3.html?name=' + encodeURIComponent(c);
+        url = '../GAFP/page3.html?name=' + encodeURIComponent(c);
     
     document.location.href = url;
 

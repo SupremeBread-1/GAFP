@@ -80,7 +80,7 @@ document.getElementById('find').addEventListener('keyup', function(e){
 
 function testJS() {
     var b = document.getElementById('find').value,
-        url = '../page2.html?name=' + encodeURIComponent(b);
+        url = '../GAFP/page2.html?name=' + encodeURIComponent(b);
 
     document.location.href = url;
 }

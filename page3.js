@@ -30,6 +30,6 @@ window.onload = function () {
 
 function backpeddleJS() {
     var d = document.getElementById('can').value,
-        url = '../page2.html?name=' + encodeURIComponent(d);
+        url = '../GAFP/page2.html?name=' + encodeURIComponent(d);
     document.location.href = url;
 }
