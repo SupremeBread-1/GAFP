@@ -102,7 +102,7 @@ body {
   height: 100vh;
   width: 768px;
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background: url('../pngwave\ \(18\).png') top no-repeat , url('https://i.pinimg.com/originals/a6/7f/9c/a67f9c78e621bfeb5541af76222c8a05.jpg') bottom no-repeat ;
   background-size: cover, 1000px;
 }
