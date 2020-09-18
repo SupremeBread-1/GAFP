@@ -16,10 +16,16 @@ div {
     justify-content: center;
     align-items: flex-end;
 }
+a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
 img {
     /* border: solid 2px blue; */
-    height: 30%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
 }
 #btn {
     border: 2px solid red;
@@ -30,8 +36,8 @@ img {
     display: block;
 }
 .divstyle{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 .imgstyle{
     /* border: 2px solid yellow; */
