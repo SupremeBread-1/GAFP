@@ -1,13 +1,11 @@
 let images = ['../GAFP/wobbleup.gif', '../GAFP/Finished\ images/4.png', '../GAFP/Finished\ images/5.png', '../GAFP/Finished\ images/6.png', '../GAFP/Finished\ images/7.png' ]
-
+console.log(images)
 
 var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
 
 // x.addEventListener()
 
 // Random Image Generator and Positioner
-
-// const images = ['../GAFP/Finished\ images/doggo\ 1.png','../GAFP/Finished\ images/doggo\ 2.png','../GAFP/Finished\ images/doggo\ 3.png']
 
 let body = document.querySelector('body')
 body.addEventListener('click', spawn)
