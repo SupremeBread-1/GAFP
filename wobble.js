@@ -18,7 +18,8 @@ function spawn() {
     let totaly = Math.floor(y - (Math.random() * y));
     let div = document.createElement('div');
     div.classList.add('divstyle','appear');
-    div.style.position = 'relative';
+    div.id = "eye";
+    div.style.position = 'absolute';
     div.style.top = totaly + 'px';
     div.style.left = totalx + 'px';
     div.style.border = '2px solid red';
@@ -27,22 +28,39 @@ function spawn() {
     // console.log(spin);
     let wheel = document.createElement('img');
     wheel.src = spin;
+    wheel.id = "blink";
     // console.log(wheel.src);
     wheel.classList.add('imgstyle','appear');
     // console.log(wheel.classList);
     div.appendChild(wheel)
     blue.appendChild(div)
-    const fade = document.querySelectorAll('.appear');
-    // console.log(fade);
-    fade.forEach(wheel => wheel.addEventListener('transitionend', runaway))
+    const fade = document.querySelectorAll('#eye');
+    console.log(fade);
+    const away = document.querySelectorAll('#blink');
+    console.log(away);
+    fade.forEach(wheel => wheel.addEventListener('transitionend', runaway));
+    
 }
 
 function runaway() {
     // if (wheel.propertyName !== 'transform') return;
     // console.log(this);
-    wheel.classList.remove('appear')
-    wheel.classList.add('disappear')
-    div.classList.remove('appear')
-    div.classList.add('disappear')
+    // let wheel = document.querySelectorAll('#blink')
+    // fade.classList.remove('appear')
+    // fade.classList.add('disappear')
+    div.classList.remove('divstyle')
+    // div.classList.add('disappear')
+    // console.log(fade)
     // console.log(div)
+    // div.remove();
+    // wheel.remove();
+    // blue.remove();
+    // const fade = document.querySelectorAll('#eye');
+    console.log(blue.firstChild)
+    // while (blue.firstChild) {
+    //     blue.removeChild(blue.firstChild);
+    // }
+    blue.style.height = 0;
+    blue.innerHTML = '';
+
 }
